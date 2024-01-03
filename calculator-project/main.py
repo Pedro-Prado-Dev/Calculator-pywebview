@@ -1,32 +1,28 @@
 import webview
-import time
-from API import API
+from flask import Flask, send_from_directory
 
-def load_html(window):
-    with open('src/index.html', 'r') as file:
-        html_content = file.read()
-    with open('src/css/styles.css', 'r') as file:
-        css_content = file.read()
-    time.sleep(2)
-    window.load_html(html_content)
-    window.load_css(css_content)
+app = Flask(__name__, static_folder='frontend')
 
+@app.route('/')
+def serve_vue_app():
+    return send_from_directory('frontend', 'index.html')
 
-def main():
-    with open('src/components/home_screen.html', 'r') as file:
-        html_content = file.read()
-    api = API()
-    window = webview.create_window(
-        title="Teste pywebview",
-        html=html_content,
-        js_api=api,
-        width=800,
-        height=600
-    )
-    with open('src/css/styles.css', 'r') as file:
-        css_content = file.read()
-    webview.start(window.load_css(css_content), window)
+@app.route('/<path:filename>')
+def serve_static(filename):
+    return send_from_directory('frontend', filename)
+
+def create_window():
+    webview.create_window('Calculadora', 'http://127.0.0.1:5000/')
+    webview.start(debug=True)
 
 if __name__ == '__main__':
-    main()
+    import threading
 
+    flask_thread = threading.Thread(target=app.run, kwargs={'debug': False})
+    flask_thread.daemon = True
+    flask_thread.start()
+
+    import time
+    time.sleep(2)
+
+    create_window()

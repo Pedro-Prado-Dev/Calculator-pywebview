@@ -1,0 +1,24 @@
+<!-- frontend/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        <input type="number" v-model="numero1">
+        <select v-model="operacao">
+            <option value="soma">+</option>
+            <option value="subtracao">-</option>
+            <option value="multiplicacao">*</option>
+            <option value="divisao">/</option>
+        </select>
+        <input type="number" v-model="numero2">
+        <button @click="calcular">Calcular</button>
+        <p v-if="resultado !== null">Resultado: {{ resultado }}</p>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
