@@ -12,7 +12,7 @@ Certifique-se de ter o Python instalado. Este projeto utiliza o Flask para o bac
     
     ```bash
     
-    git clone https://github.com/seu_usuario/seu_projeto.git
+    https://github.com/Pedro-Prado-Dev/Calcute-pywebview
     
     ```
     
@@ -20,7 +20,7 @@ Certifique-se de ter o Python instalado. Este projeto utiliza o Flask para o bac
     
     ```bash
     
-    cd seu_projeto
+    cd calculator-project
     
     ```
     
