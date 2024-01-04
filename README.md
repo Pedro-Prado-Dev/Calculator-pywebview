@@ -51,11 +51,11 @@ Certifique-se de ter o Python instalado. Este projeto utiliza o Flask para o bac
 
 ## **Executando o projeto**
 
-1. Execute o arquivo **`run.py`** para iniciar o servidor Flask:
+1. Execute o arquivo **`main.py`** para iniciar o servidor Flask:
     
     ```bash
     
-    python run.py
+    python main.py
     
     ```
     
@@ -64,7 +64,7 @@ Certifique-se de ter o Python instalado. Este projeto utiliza o Flask para o bac
 ## **Funcionalidades**
 
 - Calculadora simples com operações de adição, subtração, multiplicação e divisão.
-- Interação em tempo real utilizando Vue.js para realizar os cálculos na página sem recarregar.
+- Interação em tempo real utilizando Flask para realizar os cálculos na página sem recarregar.
 
 ## **Estrutura do Projeto**
 
@@ -84,6 +84,16 @@ meu_projeto/
 └── run.py
 
 ```
+
+## **Criando um Executavel**
+- Usando o pyinstaller e o arquivo specfile.spec, para a geração de um arquivo executavel
+  
+    ```bash
+    
+     pyinstaller specfile.spec
+    
+    ```
+- Assim o executavel estará dentro da pasta dist
 
 ## **Contribuição**
 
