@@ -4,7 +4,7 @@ Este é um projeto simples que demonstra o uso do Flask como backend para uma ca
 
 ## **Pré-requisitos**
 
-Certifique-se de ter o Python instalado. Este projeto utiliza o Flask para o backend e Vue.js para interatividade na página web.
+Certifique-se de ter o Python instalado. Este projeto utiliza o Flask para o backend para interatividade na página web.
 
 ## **Instalação**
 
