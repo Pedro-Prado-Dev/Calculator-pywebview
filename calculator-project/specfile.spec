@@ -44,5 +44,5 @@ coll = COLLECT(
     a.datas,
     strip=False,
     upx=True,
-    name='nome_do_seu_executavel',
+    name='calculadora-pywebview',
 )
