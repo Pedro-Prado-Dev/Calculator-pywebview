@@ -1,8 +1,6 @@
-# Untitled
+# Calculadora com Flask
 
-# **Calculadora com Flask e Vue.js**
-
-Este é um projeto simples que demonstra o uso do Flask como backend para uma calculadora web, e o Vue.js para a interatividade na página da calculadora.
+Este é um projeto simples que demonstra o uso do Flask como backend para uma calculadora web, e Js para a interatividade na página da calculadora.
 
 ## **Pré-requisitos**
 
