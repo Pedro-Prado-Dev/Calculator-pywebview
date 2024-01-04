@@ -7,6 +7,8 @@
 </head>
 <body>
     <h1>Calculadora</h1>
+    <button class="dark-mode-button" onclick="toggleDarkMode()">Modo Escuro</button>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
     <form action="/calculadora" method="post">
         <input type="number" step="any" name="num1" placeholder="Número 1" required><br><br>
         <input type="number" step="any" name="num2" placeholder="Número 2" required><br><br>
