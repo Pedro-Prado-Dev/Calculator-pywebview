@@ -11,7 +11,7 @@ Certifique-se de ter o Python instalado. Este projeto utiliza o Flask para o bac
 1. Clone este repositório:
     
     ```bash
-    bashCopy code
+    
     git clone https://github.com/seu_usuario/seu_projeto.git
     
     ```
@@ -19,7 +19,7 @@ Certifique-se de ter o Python instalado. Este projeto utiliza o Flask para o bac
 2. Navegue até o diretório do projeto:
     
     ```bash
-    bashCopy code
+    
     cd seu_projeto
     
     ```
@@ -27,7 +27,7 @@ Certifique-se de ter o Python instalado. Este projeto utiliza o Flask para o bac
 3. Crie um ambiente virtual (opcional, mas recomendado):
     
     ```bash
-    bashCopy code
+    
     python -m venv venv
     
     ```
@@ -35,7 +35,7 @@ Certifique-se de ter o Python instalado. Este projeto utiliza o Flask para o bac
 4. Ative o ambiente virtual (no Windows):
     
     ```bash
-    bashCopy code
+    
     venv\Scripts\activate
     
     ```
@@ -43,7 +43,7 @@ Certifique-se de ter o Python instalado. Este projeto utiliza o Flask para o bac
 5. Instale as dependências:
     
     ```bash
-    bashCopy code
+    
     pip install -r requirements.txt
     
     ```
@@ -54,7 +54,7 @@ Certifique-se de ter o Python instalado. Este projeto utiliza o Flask para o bac
 1. Execute o arquivo **`run.py`** para iniciar o servidor Flask:
     
     ```bash
-    bashCopy code
+    
     python run.py
     
     ```
